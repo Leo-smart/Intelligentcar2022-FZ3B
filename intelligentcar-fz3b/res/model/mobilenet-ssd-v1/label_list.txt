@@ -1,0 +1,11 @@
+BlueOne
+BlueTwo
+BusyArea
+Cone
+CrossWalk
+FreeZone
+GasStation
+Slope
+Stop
+WriteOne
+WriteTwo

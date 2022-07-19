@@ -1,0 +1,19 @@
+{
+	"model_file_name": "mobilenet-ssd-model",
+	"params_file_name": "mobilenet-ssd-params",
+	"labels_file_name": "label_list.txt",
+	"format": "RGB",
+	"input_width": 300,
+	"input_height": 300,
+	"mean": [
+		127.5,
+		127.5,
+		127.5
+	],
+	"scale": [
+		0.007843,
+		0.007843,
+		0.007843
+	],
+	"threshold": 0.3
+}
