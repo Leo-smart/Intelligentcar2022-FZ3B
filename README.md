@@ -8,7 +8,7 @@
 同时将继续汇集历届经验，持续为大家共享相关资源，欢迎批评改进，未完待续！！！
 
 #### 软件架构
-![](res/ICAR-Edgeboard-Frame.png)
+![](./res/ICAR-Edgeboard-Frame.png)
 
 注意：该版本不包含所有功能块，部分内容需要各位参赛选手继续搭建...（环岛/加油站/泛行区）
 
@@ -23,9 +23,9 @@
 
 #### 文件目录
 
-![](res/软件文件目录.png)
+![](./res/软件文件目录.png)
 
-![](res/目录.png)
+![](./res/目录.png)
 
 
 
@@ -33,23 +33,23 @@
 
 1. 编译代码/Make
 
-   ![](res/makeList.png)
+   ![](./res/makeList.png)
 
    编码可执行程序，可修改CMakeLists.txt；
 
    到build路径下cmake：
 
-   ![](res/cmake.jpg)
+   ![](./res/cmake.jpg)
 
    编译代码：
 
-   ![](res/make.png)
+   ![](./res/make.png)
 
    
 
 2. 修改config文件，启动相关模式
 
-   ![](res/config.png)
+   ![](./res/config.png)
 
    ​		修改motion.json文件后，不必再次编译即可运行，方便后期调试。可通过debug标志启动仿真（跑视频）模式和比赛（竞速）模式，仿真模式下默认调取本地视频，并且通过VNC观察实时图像运算结果；比赛模式将关闭图像显示和图形绘制（省时间/10ms）。
 
@@ -59,13 +59,13 @@
 
    运行icar程序需要连接下位机，否则程序退出，插入ch340/cp2102的USB串口即可。
 
-   ![](res/run.png)
+   ![](./res/run.png)
 
    
 
 4. 查看运行结果（debug模式）
 
-   ![](res/debug.png)
+   ![](./res/debug.png)
 
    
 
@@ -73,7 +73,7 @@
 
    脱机运行：小车在赛道上奔跑时可通过 "nohup" 命令启动程序，此时拔掉网线继续运行。
 
-   ![](res/nohup.png)
+   ![](./res/nohup.png)
 
    若程序无法自行退出，待重新插上网线后，通过Ctrl+C终止进程，或者查询当前进程ID（ps -ef|grep ./icar）,并杀死当前进程（kill -9 ID）。
 
@@ -86,19 +86,19 @@
 
 Image输出 → 预处理 → 赛道识别（Track） → 特殊元素识别（Rec/Det） →  路径拟合  → 运动控制  → 下位机
 
-![](res/ai.jpg)
+![](./res/ai.jpg)
 
 
 
-![](res/track.jpg)
+![](./res/track.jpg)
 
 
 
-![](res/rec.jpg)
+![](./res/rec.jpg)
 
 
 
-![](res/control.jpg)
+![](./res/control.jpg)
 
 
 
@@ -106,9 +106,9 @@ Image输出 → 预处理 → 赛道识别（Track） → 特殊元素识别（R
 
 1. 摄像头前瞻距离：1.6~2.5米
 
-   <img src="res/前瞻A.jpg" style="zoom:25%;" />
+   <img src="./res/前瞻A.jpg" style="zoom:25%;" />
 
-   <img src="res/前瞻B.jpg" style="zoom: 67%;" />
+   <img src="./res/前瞻B.jpg" style="zoom: 67%;" />
 
 
 
